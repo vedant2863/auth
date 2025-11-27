@@ -1,0 +1,21 @@
+services:
+  mongoDB:
+    image: mongo:7
+    container_name: auth_mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password123
+      MONGO_INITDB_DATABASE: mern_auth
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - mern_net
+
+networks:
+  mern_net:
+
+volumes:
+  mongo_data:

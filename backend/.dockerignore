@@ -1,0 +1,45 @@
+# Node
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Logs
+*.log
+logs
+debug.log
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build output
+dist
+build
+.cache
+.next
+out
+coverage
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Vite / CRA cache
+vite.config.ts.timestamp*
+.vite
+.esbuild
+.cache
+
+# TypeScript
+*.tsbuildinfo
+
+# Docker
+Dockerfile*
+docker-compose*
